@@ -1,0 +1,17 @@
+# Sicherungskopien der Rechtsseiten — enthalten aeltere Staende
+*.bak-*
+*.bak
+
+# Geheimnisse
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+
+# Betriebssystem / Editor
+.DS_Store
+Thumbs.db
+*.swp
