@@ -368,7 +368,7 @@ Planung, Installation und Support von Microsoft Netzwerken als auch Citrix Serve
       Wilemattstrasse 39<br />
       6210 Sursee<br />
       Schweiz</p>
-      <p>E-Mail: <span class="mail-schutz" data-x="aGMubm5hbWtjdWFyYkBzYWVyZG5h"><noscript>andreas [ät] brauckmann [punkt] ch</noscript></span></p>
+      <p>E-Mail: <span class="mail-schutz" data-x="aGMubm5hbWtjdWFyYkByb3Rub2s="><noscript>kontor [ät] brauckmann [punkt] ch</noscript></span></p>
 
       <h2>Für wen diese Erklärung gilt</h2>
       <p>Die Website wird aus der Schweiz betrieben. Der Dienst Kontor wird
@@ -440,8 +440,9 @@ Planung, Installation und Support von Microsoft Netzwerken als auch Citrix Serve
 
       <h2>Rückrufformular</h2>
       <p>Auf der Kontaktseite und in der Fusszeile jeder Seite steht ein
-      Formular, über das Sie eine Rufnummer und wahlweise Ihren Namen und
-      einen kurzen Hinweis hinterlassen können.</p>
+      Formular, über das Sie eine Rufnummer, Ihren Namen und einen kurzen
+      Hinweis zum Anlass hinterlassen können. Alle drei Angaben sind nötig:
+      ohne Namen und Anlass ist ein Rückruf ein Anruf ins Blaue.</p>
       <p>Diese Angaben werden nicht in einer Datenbank abgelegt. Sie werden
       als Kurzmitteilung über den Push-Dienst ntfy an das Telefon des
       Betreibers geschickt und stehen danach nur noch in dieser Mitteilung auf
@@ -453,6 +454,40 @@ Planung, Installation und Support von Microsoft Netzwerken als auch Citrix Serve
       verhindert, dass jemand das Formular in schneller Folge auslöst. Diese
       Einträge werden nach zwei Tagen automatisch gelöscht. Die Rufnummer
       selbst ist in diesem Eintrag nicht enthalten.</p>
+
+      <h2>Schriftliches Kontaktformular</h2>
+      <p>Auf der Kontaktseite steht neben dem Rückrufformular ein zweites
+      Formular für eine schriftliche Nachricht. Übermittelt werden Ihre
+      Antwortadresse (E-Mail), Ihre Nachricht und &#8212; freiwillig &#8212;
+      Ihr Name. Die Antwortadresse ist nötig, weil sonst niemand antworten
+      kann; sie wird für nichts anderes verwendet.</p>
+      <p>Diese Angaben werden nicht in einer Datenbank abgelegt. Sie werden
+      als E-Mail an das Postfach des Betreibers zugestellt und liegen danach
+      nur dort. Ihre Antwortadresse steht dabei im Feld &#8222;Antwort an&#8220;,
+      damit eine Antwort unmittelbar zu Ihnen zurückgeht. Zusätzlich geht
+      eine kurze Meldung über den Push-Dienst ntfy auf das Telefon des
+      Betreibers; sie enthält den Inhalt der Nachricht nicht. Solange die
+      E-Mail im Postfach nicht gelöscht wird, bleibt sie dort lesbar; eine
+      automatische Löschfrist gibt es nicht. Bei der Übermittlung
+      durchlaufen die Angaben den Server des E-Mail-Anbieters.</p>
+      <p>Gespeichert wird auch hier nur ein Eintrag zur Missbrauchsbremse:
+      die IP-Adresse des Absenders und der Zeitpunkt der Anfrage. Der
+      Inhalt der Nachricht, Ihr Name und Ihre Adresse sind darin nicht
+      enthalten. Diese Einträge werden nach zwei Tagen automatisch
+      gelöscht.</p>
+      <p>Der Inhalt Ihrer Nachricht wird von keinem Sprachmodell gelesen
+      oder ausgewertet.</p>
+
+      <h2>Sperre bei wiederholten Fehlversuchen</h2>
+      <p>Werden über eines der beiden Formulare mehrfach hintereinander
+      unbrauchbare Angaben geschickt, wird die IP-Adresse des Absenders
+      vorübergehend gesperrt. Festgehalten werden dafür die IP-Adresse, die
+      Zahl der Versuche und der Zeitpunkt &#8212; sonst nichts.</p>
+      <p>Die Sperre ist auf 24 Stunden befristet, und der Eintrag wird
+      danach automatisch gelöscht. Eine dauerhafte Sperre kommt bewusst
+      nicht in Frage: Mobilfunk- und CGNAT-Adressen werden von vielen
+      Menschen geteilt und wechseln laufend, eine dauerhafte Sperre träfe
+      darum früher oder später Unbeteiligte.</p>
 
       <h2>Kontor: Konto, Abrechnung und Chart-Agent</h2>
       <p>Unter <code>/kontor/</code> steht ein Dienst mit persönlichem Konto
@@ -523,13 +558,17 @@ Planung, Installation und Support von Microsoft Netzwerken als auch Citrix Serve
       <p>Soweit die DSGVO anwendbar ist, stützt sich die Bearbeitung auf
       folgende Grundlagen:</p>
       <ul>
-        <li><strong>Vertragserfüllung</strong> (Buchstabe b) — Führung des
-        Kontos, Bereitstellung der Auswertungen und des Chart-Agenten,
-        Abrechnung und Rechnungsstellung. Ohne diese Daten kann das Konto
-        nicht geführt werden.</li>
+        <li><strong>Vertragserfüllung und vorvertragliche Massnahmen</strong>
+        (Buchstabe b) — Führung des Kontos, Bereitstellung der Auswertungen
+        und des Chart-Agenten, Abrechnung und Rechnungsstellung. Ohne diese
+        Daten kann das Konto nicht geführt werden. Ebenfalls hierunter fällt
+        die Beantwortung einer Anfrage, die Sie über eines der beiden
+        Kontaktformulare stellen: Sie treten damit von sich aus an den
+        Betreiber heran.</li>
         <li><strong>Berechtigtes Interesse</strong> (Buchstabe f) — Betrieb und
-        Sicherheit der Website, Protokollierung von Anmeldeversuchen und die
-        Missbrauchsbremse des Rückrufformulars. Das berechtigte Interesse
+        Sicherheit der Website, Protokollierung von Anmeldeversuchen, die
+        Missbrauchsbremse der beiden Kontaktformulare und die befristete
+        Sperre nach wiederholten Fehlversuchen. Das berechtigte Interesse
         besteht darin, den Dienst verfügbar zu halten und ihn gegen
         automatisierte Angriffe und Missbrauch zu schützen. Die Aufbewahrung
         der Anmeldeversuche über die Missbrauchsbremse hinaus dient allein
@@ -690,6 +729,15 @@ Planung, Installation und Support von Microsoft Netzwerken als auch Citrix Serve
               Telefon des Anbieters, bis sie dort gelöscht wird</td></tr>
           <tr><td>Rückruf: Sperrliste (IP-Adresse, Zeitpunkt)</td>
               <td>zwei Tage, automatisch</td></tr>
+          <tr><td>Schriftliche Nachricht: Name, Antwortadresse, Nachricht</td>
+              <td>nicht gespeichert; verbleibt als E-Mail im Postfach des
+              Anbieters, bis sie dort gelöscht wird</td></tr>
+          <tr><td>Schriftliche Nachricht: Sperrliste (IP-Adresse,
+              Zeitpunkt)</td>
+              <td>zwei Tage, automatisch</td></tr>
+          <tr><td>Sperre nach wiederholten Fehlversuchen (IP-Adresse, Zahl
+              der Versuche, Zeitpunkt)</td>
+              <td>24 Stunden, automatisch</td></tr>
           <tr><td>Sitzungs-Cookie (<code>kontor_session</code>)</td>
               <td>endet mit dem Ablauf der Sitzung</td></tr>
           <tr><td>Konto (E-Mail, Passwort-Hash, letzte Anmeldung,
@@ -760,7 +808,7 @@ Planung, Installation und Support von Microsoft Netzwerken als auch Citrix Serve
 
       <h2>Kontakt für Datenschutzanliegen</h2>
       <p>Fragen zum Datenschutz und Anliegen zu Ihren Rechten richten Sie bitte
-      an: <span class="mail-schutz" data-x="aGMubm5hbWtjdWFyYkBzYWVyZG5h"><noscript>andreas [ät] brauckmann [punkt] ch</noscript></span></p>
+      an: <span class="mail-schutz" data-x="aGMubm5hbWtjdWFyYkByb3Rub2s="><noscript>kontor [ät] brauckmann [punkt] ch</noscript></span></p>
 
       <h2>Änderungen</h2>
       <p>Diese Datenschutzerklärung gilt in der jeweils veröffentlichten
