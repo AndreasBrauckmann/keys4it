@@ -83,6 +83,9 @@ Jede Antwort endet mit dem Hinweis, dass sie keine Anlageberatung ist.
 - **Schlagzeilen** je Instrument, ins Deutsche übersetzt und zwischengespeichert
 - **Wirtschaftskalender** mit Vor- und Nachlauffenstern je Wichtigkeit; die
   Termine erscheinen im Chart und im Panel
+- **Öffentlich unter `/kalender/`** — über 84 000 Termine seit 2010, ohne
+  Login und ohne Kontor-Konto einsehbar; dazu eine offene API
+  (`/kalender/api/v1/...`), anonym oder mit kostenlosem Schlüssel
 - Ein **Regelwerk entscheidet, ob** überhaupt analysiert wird — kurz vor und
   nach wichtigen Terminen bleibt es still, statt in die Nachricht hinein zu
   rechnen. Fällige Nachläufe werden nachgeholt.
@@ -130,47 +133,35 @@ Volltextsuche über das mitgelieferte Handbuch.
 
 ---
 
-## Stufen — Entwurf, noch nicht festgelegt
+## Stufen
 
-> **Dies ist ein Vorschlag, keine Preis- oder Leistungszusage.** Die
-> Staffelung ist noch nicht entschieden. Sie orientiert sich an dem, was
-> heute technisch schon vorhanden ist: den drei Modulen mit den Stufen
-> *kein Zugriff / ansehen / arbeiten*, den Fragen-Kontingenten und der Zahl
-> der beobachteten Instrumente. **Preise stehen hier bewusst keine**, weil
-> derzeit nicht abgerechnet wird.
+Die Tarife sind festgelegt. Wer sich anmeldet, sieht dieselbe Tabelle auf der
+eigenen Kontoseite.
 
-Die Spalte **heute** sagt, ob es die Funktion in der Anwendung bereits gibt
-oder ob sie für diese Stufe erst noch gebaut werden müsste.
+| | Frei | Betatester ¹ | Basis | Profi |
+|---|---|---|---|---|
+| Preis | kostenlos | kostenlos | 390.00 CHF/Monat | 690.00 CHF/Monat |
+| Chart, Zeichnungen, gespeichertes Layout | ✓ | ✓ | ✓ | ✓ |
+| Modul **Analyse** — gespeicherte Analysen ansehen | ✓ | ✓ | ✓ | ✓ |
+| Modul **Analyse** — eigene Analysen starten, **Agent im Chart** | — | ✓ | ✓ | ✓ |
+| Modul **Alarme** | — | — | ansehen | ✓ |
+| Modul **Elliott Wave** | — | — | — | ✓ |
+| **Fragen** an den Agenten | 1/Tag | 3/Std. | 30/Std. | 100/Std. |
+| Beobachtete **Instrumente** | 1 | 3 | 3 | 10 |
+| **Tiefen-Analyse** (volle Pipeline, archiviert) | — | ✓ | ✓ | ✓ |
 
-| | Frei | Pro | Team | Enterprise | heute |
-|---|---|---|---|---|---|
-| Chart, Zeichnungen, gespeichertes Layout | ✓ | ✓ | ✓ | ✓ | vorhanden |
-| Modul **Analyse** — gespeicherte Analysen ansehen | ✓ | ✓ | ✓ | ✓ | vorhanden |
-| Modul **Analyse** — eigene Analysen starten | — | ✓ | ✓ | ✓ | vorhanden |
-| **Agent im Chart** (gehört zur Analyse) | — | ✓ | ✓ | ✓ | vorhanden |
-| Modul **Alarme** | — | ✓ | ✓ | ✓ | vorhanden |
-| Modul **Elliott Wave** | — | ✓ | ✓ | ✓ | vorhanden |
-| Benachrichtigung per **E-Mail** | — | ✓ | ✓ | ✓ | vorhanden |
-| **Push** über ntfy | — | ✓ | ✓ | ✓ | vorhanden |
-| Beobachtete **Instrumente** | eines | mehrere | mehrere | frei | Feld vorhanden, siehe Hinweis |
-| **Fragen** an den Agenten | keine — das Modul ist nur zum Ansehen | Kontingent pro Stunde | Kontingent pro Stunde | nach Absprache | Feld vorhanden, siehe Hinweis |
-| **Tiefen-Analyse** (volle Pipeline, archiviert) | — | ✓ | ✓ | ✓ | vorhanden |
-| Mehrere Konten unter **einer Rechnung** | — | — | ✓ | ✓ | zu bauen |
-| Freigaben je Konto durch eine **eigene Verwaltung** | — | — | ✓ | ✓ | Verwaltung vorhanden, Mandantentrennung zu bauen |
-| Gemeinsame Instrumenten- und Alarmliste | — | — | ✓ | ✓ | zu bauen |
-| **Eigene Instanz** auf eigener Infrastruktur | — | — | — | ✓ | Container vorhanden, Ausrollen zu klären |
-| **Eigener Broker-Zugang** statt des gemeinsamen | — | — | — | ✓ | Datafeed ist austauschbar, zweiter Anschluss zu bauen |
-| Abstimmung auf einzelne Instrumente und Abläufe | — | — | — | ✓ | nach Absprache |
+¹ **Betatester steht nicht zur Auswahl** — der Tarif wird zugeteilt, nicht
+gewählt, für Konten, die die Anwendung testen und Rückmeldung geben.
 
-**Hinweis zu den Kontingenten:** Die Spalten *Instrumente* und *Fragen* stehen
-heute zwar in der Tariftabelle und auf der Kontoseite, werden aber **noch
-nicht durchgesetzt**. Es gilt derzeit für alle Konten dieselbe Grenze.
-Wirklich vom Tarif abhängig sind heute die Modulrechte und der Zugang bei
-fehlender Zahlung.
+**Zur Verfügbarkeit** wird an keiner Stelle etwas zugesagt. Es besteht kein
+Anspruch auf ununterbrochenen Betrieb; das ist in den Nutzungsbedingungen so
+geregelt.
 
-**Zur Verfügbarkeit** wird an keiner Stelle etwas zugesagt — auch nicht in den
-oberen Stufen. Es besteht kein Anspruch auf ununterbrochenen Betrieb; das ist
-in den Nutzungsbedingungen so geregelt.
+Als nächste Stufen darüber sind **Team** (mehrere Konten unter einer
+Rechnung, eigene Mandantentrennung, gemeinsame Instrumenten- und Alarmliste)
+und **Enterprise** (eigene Instanz, eigener Broker-Zugang, Abstimmung auf
+einzelne Instrumente) angedacht — dafür ist noch nichts gebaut, es gibt dazu
+keinen Zeitplan.
 
 ---
 
@@ -212,9 +203,10 @@ sind nicht handelbar und keine Zusicherung eines ausführbaren Preises.
 ## Stand
 
 Kontor befindet sich im **Beta-Betrieb** und wird derzeit als
-**nicht-kommerzielles Startup-, Hobby- und Forschungsprojekt** geführt. **Es
-findet keine Abrechnung statt**: bis heute wurde keine einzige Rechnung
-ausgestellt. Die angelegten Tarife und Abonnements sind nicht in Gebrauch.
+**nicht-kommerzielles Startup-, Hobby- und Forschungsprojekt** geführt. Der
+Wirtschaftskalender und die Marktdaten sind neu öffentlich, die Tarife sind
+festgelegt, und die ersten Benutzer testen die Anwendung. **Es findet noch
+keine Abrechnung statt**: bis heute wurde keine einzige Rechnung ausgestellt.
 
 Sobald abgerechnet wird, ändert sich dieser Status, und die Rechtstexte werden
 angepasst. Der Abschnitt *Betriebsstatus* in den Nutzungsbedingungen
