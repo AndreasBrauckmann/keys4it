@@ -111,17 +111,15 @@ Jede Antwort endet mit dem Hinweis, dass sie keine Anlageberatung ist.
 Ausgelöst wird, wenn eine Kursmarke erreicht wird, eine Analyse fertig ist
 oder ein Stop in Reichweite kommt.
 
-### Konto, Freischaltung und Abrechnung
+### Konto und Freischaltung
 
 - Anmeldung mit **Zwei-Faktor-Bestätigung (TOTP)** und Recovery-Codes
 - **Freischaltprozess**: ein neues Konto bestätigt zuerst seine
   E-Mail-Adresse, erhält danach Leserechte auf das Modul Analyse und wird von
   Hand geprüft. Das Schreibrecht wird nicht automatisch erteilt.
-- **Tarife und Abonnement** mit Zahlungssperre: bleibt die Zahlung aus, ruhen
-  nur die rechenintensiven Funktionen; der lesende Zugang bleibt bestehen
-- **Schweizer QR-Rechnung**
-- **Verwaltungsbereich** für Konten, Freigaben je Modul, Tarifanfragen und
-  Rechnungen
+- **Nutzungsgrenzen** statt Tarifen: höchstens 100 Fragen an den Agenten je
+  Konto und Tag, 500 über alle Konten zusammen
+- **Verwaltungsbereich** für Konten und Freigaben je Modul
 - **Handbuch** als eigene Dokumentation im Dienst
 
 ### Weiteres
@@ -133,35 +131,21 @@ Volltextsuche über das mitgelieferte Handbuch.
 
 ---
 
-## Stufen
+## Unentgeltlich
 
-Die Tarife sind festgelegt. Wer sich anmeldet, sieht dieselbe Tabelle auf der
-eigenen Kontoseite.
+Kontor ist ein **Forschungsprojekt**. Es testet, wie weit mit KI entwickelte
+Systeme im Alltag tragen, und soll Dritten Anregungen für eigene Vorhaben
+geben. Die Nutzung ist **unentgeltlich. Kostenpflichtige Tarife sind nicht
+vorgesehen**; es gibt keine Abonnements, keine Rechnungen und keine
+Zahlungsdaten.
 
-| | Frei | Betatester ¹ | Basis | Profi |
-|---|---|---|---|---|
-| Preis | kostenlos | kostenlos | 390.00 CHF/Monat | 690.00 CHF/Monat |
-| Chart, Zeichnungen, gespeichertes Layout | ✓ | ✓ | ✓ | ✓ |
-| Modul **Analyse** — gespeicherte Analysen ansehen | ✓ | ✓ | ✓ | ✓ |
-| Modul **Analyse** — eigene Analysen starten, **Agent im Chart** | — | ✓ | ✓ | ✓ |
-| Modul **Alarme** | — | — | ansehen | ✓ |
-| Modul **Elliott Wave** | — | — | — | ✓ |
-| **Fragen** an den Agenten | 1/Tag | 3/Std. | 30/Std. | 100/Std. |
-| Beobachtete **Instrumente** | 1 | 3 | 3 | 10 |
-| **Tiefen-Analyse** (volle Pipeline, archiviert) | — | ✓ | ✓ | ✓ |
-
-¹ **Betatester steht nicht zur Auswahl** — der Tarif wird zugeteilt, nicht
-gewählt, für Konten, die die Anwendung testen und Rückmeldung geben.
+Damit der Betrieb tragbar bleibt, gelten Nutzungsgrenzen: höchstens
+**100 Fragen an den Agenten je Konto und Tag** und **500 über alle Konten**.
+Freigeschaltet werden Konten von Hand.
 
 **Zur Verfügbarkeit** wird an keiner Stelle etwas zugesagt. Es besteht kein
 Anspruch auf ununterbrochenen Betrieb; das ist in den Nutzungsbedingungen so
 geregelt.
-
-Als nächste Stufen darüber sind **Team** (mehrere Konten unter einer
-Rechnung, eigene Mandantentrennung, gemeinsame Instrumenten- und Alarmliste)
-und **Enterprise** (eigene Instanz, eigener Broker-Zugang, Abstimmung auf
-einzelne Instrumente) angedacht — dafür ist noch nichts gebaut, es gibt dazu
-keinen Zeitplan.
 
 ---
 
@@ -202,15 +186,12 @@ sind nicht handelbar und keine Zusicherung eines ausführbaren Preises.
 
 ## Stand
 
-Kontor befindet sich im **Beta-Betrieb** und wird derzeit als
-**nicht-kommerzielles Startup-, Hobby- und Forschungsprojekt** geführt. Der
-Wirtschaftskalender und die Marktdaten sind neu öffentlich, die Tarife sind
-festgelegt, und die ersten Benutzer testen die Anwendung. **Es findet noch
-keine Abrechnung statt**: bis heute wurde keine einzige Rechnung ausgestellt.
-
-Sobald abgerechnet wird, ändert sich dieser Status, und die Rechtstexte werden
-angepasst. Der Abschnitt *Betriebsstatus* in den Nutzungsbedingungen
-beschreibt den jeweils aktuellen Stand.
+Kontor befindet sich im **Beta-Betrieb** und wird als
+**nicht-kommerzielles Forschungsprojekt** geführt. Der Wirtschaftskalender und
+die Marktdaten sind öffentlich, die ersten Benutzer testen die Anwendung.
+**Es findet keine Abrechnung statt**, und es ist keine vorgesehen. Der
+Abschnitt *Betriebsstatus* in den Nutzungsbedingungen beschreibt den jeweils
+aktuellen Stand.
 
 ---
 
@@ -223,7 +204,7 @@ Die drei Seiten liegen in diesem Repository unter `rechtliches/`:
 - [Nutzungsbedingungen](rechtliches/bedingungen/index.html)
 
 Massgebend ist jeweils die im Netz veröffentlichte Fassung. Die Kopien hier
-geben den Stand vom 3. September 2026 wieder.
+geben den Stand vom 28. Oktober 2026 wieder.
 
 Es gilt schweizerisches Recht; Gerichtsstand ist Sursee, Kanton Luzern.
 Zwingende Gerichtsstände, insbesondere für Konsumentinnen und Konsumenten,
